@@ -1,0 +1,12 @@
+<menu 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" 
+    tools:context=".MainActivity"
+    android:textColor="@color/black">
+
+    <item android:id="@+id/action_websearch"
+          android:icon="@drawable/action_search"
+          android:title="@string/action_websearch"
+     />
+</menu><!-- From: file:/C:/Users/Owner/AndroidStudioProjects/kitchensink-master/app/src/main/res/menu/menu_main.xml -->

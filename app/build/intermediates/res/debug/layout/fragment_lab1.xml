@@ -1,0 +1,75 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="@dimen/spacing_normal"
+	android:paddingRight="@dimen/spacing_normal"
+	android:paddingTop="@dimen/spacing_normal"
+	android:paddingBottom="@dimen/spacing_normal"
+	android:id="@+id/lab1_fragment"
+	tools:context=".Lab1Fragment"
+    android:background="@color/orange"
+    android:weightSum="1"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="lat"
+        android:id="@+id/latitude"
+        android:background="@color/orange"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="long"
+        android:id="@+id/longitude"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/orange"
+        android:maxLines="5"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="update"
+        android:id="@+id/update"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="current location"
+        android:id="@+id/current_location" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="zoom"
+        android:id="@+id/zoom" />
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/start_end_service"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="false"
+        android:checked="true"
+        android:textOff="stopService"
+        android:textOn="startService" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="500dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:id="@+id/mapsImage"
+      />
+    </ScrollView>
+</LinearLayout>
+<!-- From: file:/C:/Users/Owner/AndroidStudioProjects/kitchensink-master/app/src/main/res/layout/fragment_lab1.xml -->

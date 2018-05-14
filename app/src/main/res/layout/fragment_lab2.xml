@@ -1,0 +1,67 @@
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+    <TextView 
+    	android:text="@string/lab2" 
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:elevation="@dimen/elev_small"
+        />
+    <lehman.android.FanView
+        android:layout_width="400dp"
+        android:layout_height="317dp"
+        android:background="@color/white"
+        custom:textColor="@color/black"
+        custom:header="Current Weather"
+        custom:textSize="30"
+        custom:fanBlades="@drawable/fan_blades"
+        custom:fanPole="@drawable/fan_pole"
+        android:id="@+id/fanView"
+        android:longClickable="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton2"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton3"
+        android:layout_gravity="right|bottom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low"
+        android:id="@+id/low"
+        android:layout_gravity="left|bottom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Med"
+        android:id="@+id/med"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/high"
+        android:layout_gravity="right|bottom"
+        android:text="High" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="off"
+        android:id="@+id/off"
+        android:layout_gravity="right|center_vertical" />
+
+</FrameLayout>
